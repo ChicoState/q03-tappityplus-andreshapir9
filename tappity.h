@@ -1,14 +1,17 @@
 #ifndef _TAPPITY_H_
 #define _TAPPITY_H_
 #include <string>
-
+//edit read me
+//first line is not tappityp[lus it qill be q3_tappityplus_ashapir9
+//makes status 
 /**
  * Class for tappity
  **/
 class tappity
 {
     private:
-
+        std::string reference;
+        std::string input;
     public:
         //Constructor sets the reference phrase
         tappity(std::string reference);
