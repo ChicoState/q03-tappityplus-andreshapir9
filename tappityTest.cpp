@@ -137,3 +137,11 @@ TEST(tappityTest, entry_diff_size4)
 	//make sure inpuut is the same size as reference
 	ASSERT_EQ(test.accuracy(), 90);
 }
+
+//accuracy two empty strings
+TEST (tappityTest, accuracy_empty)
+{
+	tappity test("");
+	test.entry("");
+	ASSERT_EQ(test.accuracy(), 100);
+}
