@@ -39,8 +39,13 @@ int tappity::length_difference()
 double tappity::accuracy()
 {
    //are the strings the same length?
-   if (reference.length() == input.length())
+   if (length_difference() ==0)
    {  
+    //if length is 0 we can just return 100
+    if (reference.length() == 0)
+    {
+      return 100;
+    }
     int missed = 0;
     for (int i = 0; i < reference.length(); i++)
     {
